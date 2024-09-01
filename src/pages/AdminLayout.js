@@ -1,4 +1,5 @@
 import React from "react";
+import Carusel from "../components/Client/layout/Carusel";
 
 function UserHomepage() {
   return (
@@ -23,6 +24,9 @@ function UserHomepage() {
             </li>
           </ul>
         </div>
+      </div>
+      <div>
+        <Carusel />
       </div>
     </div>
   );
