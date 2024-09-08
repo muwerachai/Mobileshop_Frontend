@@ -1,5 +1,11 @@
+import OrderTrackingPage from "./OrderTrackingPage";
+
 function DynamicOrderTrackingPage() {
-  return <div>DynamicOrderTrackingPage</div>;
+  return (
+    <div>
+      <OrderTrackingPage />
+    </div>
+  );
 }
 
 export default DynamicOrderTrackingPage;

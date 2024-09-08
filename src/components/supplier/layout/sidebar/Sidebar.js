@@ -37,7 +37,7 @@ function SideBar() {
   return (
     <div>
       <aside className="w-64 " aria-label="Sidebar">
-        <div className="overflow-y-auto py-4 px-3 bg-gray-50  dark:bg-gray-800 h-screen ">
+        <div className="overflow-y-auto py-4 px-3 bg-gray-50  dark:bg-gray-1000 h-screen ">
           <ul className="space-y-2">
             {mockList.map((el, idx) => {
               return (
@@ -81,7 +81,6 @@ function SideBar() {
                             );
                           })}
                         </>
-                        )
                       </li>
                     </ul>
                   )}

@@ -12,7 +12,7 @@ function ProfileDropDown() {
       <div class="dropdown dropdown-end dropdown-hover">
         <label tabindex="0" className="btn m-1 gap-2 rounded-3xl  ">
           {<CgProfile />}
-          <p className="">Hirun</p>
+          <p className="">Sirun</p>
         </label>
         <ul
           tabindex="0"
