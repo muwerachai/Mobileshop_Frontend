@@ -1,4 +1,6 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
+import Clientlayout from "../pages/Clientlayout";
+import Landingpage from "../pages/Userpages/Landingpage";
 import DevLayout from "../components/Admin/DevLayout";
 import SupplierLayout from "../components/supplier/layout/SupplierLayout";
 import SupplierHomePage from "../pages/supplier/SupplierHomePage";
@@ -12,6 +14,9 @@ import DynamicProductPage from "../pages/supplier/DynamicProductPage";
 function Router() {
   return (
     <Routes>
+      <Route path="/" element={<Clientlayout />}>
+        <Route path="" element={<Landingpage />} />
+      </Route>
       <Route path="/supplier" element={<SupplierLayout />}>
         <Route path="" element={<SupplierHomePage />} />
         <Route path="signup" element={<SupplierSignUpPage />} />
