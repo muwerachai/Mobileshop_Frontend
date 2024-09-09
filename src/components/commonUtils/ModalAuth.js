@@ -86,4 +86,4 @@ function ModalAny({ inputEmodal }) {
   );
 }
 
-export default ModalAny;
+export default ModalAuth;
