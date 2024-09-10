@@ -1,5 +1,6 @@
 import React from "react";
 import { TbMovie } from "react-icons/tb";
+import { BsPlug } from "react-icons/bs";
 import { GrGamepad } from "react-icons/gr";
 import { GiDesk } from "react-icons/gi";
 import { GoDeviceDesktop } from "react-icons/go";
@@ -29,6 +30,12 @@ function LgsubHeader() {
       page: "it_accessories",
       icon: <BsCameraReels size={55} />
     },
+    {
+      text: "Extensions",
+      page: "it_accessories",
+      icon: <BsPlug size={55} />
+    },
+
     {
       text: "Mobile phone",
       page: "mobile phone",

@@ -5,7 +5,6 @@ const CountdownContext = createContext();
 function CountdownContextProvider({ children }) {
   const [Countdownstr, setCountdownstr] = useState(null);
   const SetcountdownStrbydate = async () => {};
-  // const [trigger, setTrigger] = useState(false);
   return (
     <CountdownContext.Provider value={{ Countdownstr, setCountdownstr }}>
       {children}
