@@ -7,7 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import CSignin from "../Client/authforms/signin";
-function ModalAny({ inputEmodal }) {
+function ModalAuth({ inputEmodal }) {
   const [UserAuthmodal, setUserAuthmodal] = useState(false);
   const [authOption, setauthOption] = useState(null);
   const navigete = useNavigate();
