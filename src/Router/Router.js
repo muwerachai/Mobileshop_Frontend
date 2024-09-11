@@ -6,7 +6,9 @@ import CategoryPage from "../pages/client/CategoryPage";
 import ProductItemPage from "../pages/client/ProductItemPage";
 import CartPage from "../pages/client/CartPage";
 import PaymentPage from "../pages/client/PaymentPage";
-import SaleOrderTrackingPage from "../pages/client/SaleOrderTrackingPage";
+import SaleOrderPage from "../pages/client/SaleOrderPage";
+import MySpecPage from "../pages/client/MySpecPage";
+import BudgetMePage from "../pages/client/BudgetMePage";
 import AdminLayout from "../pages/AdminLayout";
 import DevStat from "../components/Admin/DevStat";
 import AdminOrder from "../pages/AdminOrder";
@@ -16,8 +18,9 @@ import SupplierSignUpPage from "../pages/supplier/SupplierSignUpPage";
 import DynamicAddProductPage from "../pages/supplier/DynamicAddProductPage";
 import MyShopPage from "../pages/supplier/MyShopPage";
 import DynamicBalancePage from "../pages/supplier/DynamicBalancePage";
-import DynamicOrderTrackingPage from "../pages/supplier/DynamicOrderTrackingPage";
+import DynamicOrderPage from "../pages/supplier/DynamicOrderPage";
 import DynamicProductPage from "../pages/supplier/DynamicProductPage";
+import TrackingPage from "../pages/supplier/TrackingPage";
 
 function Router() {
   return (
@@ -26,10 +29,12 @@ function Router() {
         <Route path="" element={<Landingpage />} />
         <Route path="signup" element={<ClientSignUpPage />} />
         <Route path="category" element={<CategoryPage />} />
-        <Route path="product-item" element={<ProductItemPage />} />
+        <Route path="product-item/:productId" element={<ProductItemPage />} />
         <Route path="cart" element={<CartPage />} />
         <Route path="payment" element={<PaymentPage />} />
-        <Route path="sale-order-tracking" element={<SaleOrderTrackingPage />} />
+        <Route path="sale-order" element={<SaleOrderPage />} />
+        <Route path="budget-me" element={<BudgetMePage />} />
+        <Route path="my-spec" element={<MySpecPage />} />
       </Route>
       <Route path="/supplier" element={<SupplierLayout />}>
         <Route path="" element={<SupplierHomePage />} />
@@ -38,10 +43,8 @@ function Router() {
         <Route path="add-product" element={<DynamicAddProductPage />} />
         <Route path="my-shop" element={<MyShopPage />} />
         <Route path="balance-page" element={<DynamicBalancePage />} />
-        <Route
-          path="order-tracking-page"
-          element={<DynamicOrderTrackingPage />}
-        />
+        <Route path="order" element={<DynamicOrderPage />} />
+        <Route path="tracking" element={<TrackingPage />} />
       </Route>
       <Route path="/admin" element={<AdminLayout />}>
         <Route path="" element={<AdminOrder />} />

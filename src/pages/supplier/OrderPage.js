@@ -1,6 +1,6 @@
 import tech1 from "../../pictures/tech1.png";
 import tech2 from "../../pictures/tech2.png";
-function OrderTrackingPage() {
+function OrderPage() {
   return (
     <div className="">
       <div className="h-[185px]">
@@ -183,4 +183,4 @@ function OrderTrackingPage() {
   );
 }
 
-export default OrderTrackingPage;
+export default OrderPage;
